@@ -23,7 +23,7 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "Ef Core",
+        name: "Auth0",
         path: "/assets/logos/auth0.svg",
       },
       {
@@ -35,15 +35,18 @@ export const myProjects = [
   },
   {
     id: 2,
-    title: "Centralized Inventory Management System",
+    title: "Ecommerce Platform",
     description:
-      "A comprehensive inventory management system designed for manufacturing companies, focusing on real-time tracking and dynamic order prioritization.",
+      
+"Adrenix-Ecommerce StoreAdrenix-Ecommerce Store"
+,
     subDescription: [
-        "Designed and built a web-based system to track real-time raw material inventory, reducing manual errors by 30%. Implemented worker logging features, improving accountability and tracking efficiency by 40%. Developed dynamic order prioritization, enhancing workflow automation.",
+        
+        "Developed a full-stack e-commerce platform with a focus on user experience and performance. Implemented a responsive design using TailwindCSS, ensuring seamless navigation across devices. Integrated secure payment gateways and optimized product management features for efficient inventory handling.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/Inventory.png",
+    image: "/assets/projects/ecommerce.png",
     tags: [
       {
         id: 1,
@@ -69,6 +72,41 @@ export const myProjects = [
   },
   {
     id: 3,
+    title: "Health Related Web Application",
+    description:
+      "A web application designed to manage health-related data, including patient records and appointment scheduling.",
+    subDescription: [
+        "Developed a comprehensive health management system to streamline patient data and appointment scheduling. Implemented secure user authentication and role-based access control using Auth0. Designed an intuitive UI with React and TailwindCSS for easy navigation and data entry. Integrated real-time notifications for appointment reminders and updates.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/health.png",
+    tags: [
+      {
+        id: 1,
+        name: "Node.js",
+        path: "/assets/logos/nodejs.svg",
+      },
+      {
+        id: 2,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 3,
+        name: "MongoDB",
+        path: "/assets/logos/mongodb.svg",
+      },
+      {
+        id: 4,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+    ],
+  },
+  
+  {
+    id: 4,
     title: "Travel Agency Landing Page",
     description:
       "A modern, interactive landing page for a travel agency, showcasing popular packages and features.",
