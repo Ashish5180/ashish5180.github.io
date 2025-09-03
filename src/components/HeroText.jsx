@@ -30,7 +30,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            A Backend Engineer <br /> Specialized in Java & Microservices
+            A Software Developer <br /> Specialized in MERN stack , Go lang , App development and Cloud.
           </motion.p>
           <motion.div
             variants={variants}
@@ -87,7 +87,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1.8 }}
         >
-          Microservices & APIs with Spring Boot
+          Microservices & APIs with Go lang , AWS Lambda
         </motion.p>
       </div>
     </div>
