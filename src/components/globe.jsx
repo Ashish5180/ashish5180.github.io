@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 import PropTypes from "prop-types";
 
 const MOVEMENT_DAMPING = 1400;
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
 const GLOBE_CONFIG = {
   width: 800,
   height: 800,
