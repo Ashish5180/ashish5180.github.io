@@ -17,9 +17,10 @@ const About = () => {
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
           />
           <div className="z-10">
-  <p className="headtext">Hi, I'm Ashish</p>
-  <p className="subtext">
-    I'm a passionate Software Engineer, specializing in the MERN stack for modern web interfaces and Java Spring Boot for building scalable, microservices-based backend systems. I thrive on crafting performant APIs, intuitive user experiences, and cloud-ready applications.
+  <p className="headtext">Hi, I&apos;m Ashish | Software Engineer</p>
+  <p className="subtext text-white">
+  I specialize in MERN stack and Golang for building high-performance applications, with expertise in cloud-native serverless backends (AWS) and mobile apps using Flutter & Expo.
+  Beyond coding, I focus on scalable architectures, API performance, and DevOps workflows, ensuring every product is fast, reliable, and cloud-ready. I adapt seamlessly across stacks and love solving challenges with the best-fit technology.
   </p>
 </div>
 
@@ -32,16 +33,16 @@ const About = () => {
             className="flex items-center justify-center w-full h-full"
           >
             <p className="flex items-end text-5xl text-gray-500">
-              Backend
+              Developer
             </p>
             <Card
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="Java"
+              text="MERN"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="Spring Boot"
+              text="Go"
               containerRef={grid2Container}
             />
             <Card
@@ -61,24 +62,32 @@ const About = () => {
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/docker.svg"
+              image="assets/logos/go.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/java.svg"
+              image="assets/logos/flutter.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/springboot.svg"
+              image="assets/logos/expo.svg"
               containerRef={grid2Container}
             />
-            <Card
-              style={{ rotate: "-45deg", top: "15%", left: "40%" }}
-              image="assets/logos/kubernetes.svg"
-              containerRef={grid2Container}
-            />
+           <Card
+  style={{ rotate: "-45deg", top: "15%", left: "40%", color: "white" }}
+  image="assets/logos/nodejs.svg"
+  className="text-white"
+  containerRef={grid2Container}
+/>
+<Card
+  style={{ rotate: "-45deg", top: "15%", left: "40%", color: "white" }}
+  image="assets/logos/mongodb.svg"
+  className="text-white"
+  containerRef={grid2Container}
+/>
+
           </div>
         </div>
         {/* Grid 3 */}
@@ -86,7 +95,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              I'm based in India, and open to remote work worldwide
+              I&apos;m based in India, and open to remote work worldwide
             </p>
           </div>
           <figure className="absolute left-[30%] top-[10%]">

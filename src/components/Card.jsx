@@ -1,4 +1,6 @@
 import { motion } from "motion/react";
+import PropTypes from 'prop-types';
+
 const Card = ({ style, text, image, containerRef }) => {
   return image && !text ? (
     <motion.img
@@ -22,6 +24,13 @@ const Card = ({ style, text, image, containerRef }) => {
       {text}
     </motion.div>
   );
+};
+
+Card.propTypes = {
+  style: PropTypes.object,
+  text: PropTypes.string,
+  image: PropTypes.string,
+  containerRef: PropTypes.object,
 };
 
 export default Card;

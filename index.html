@@ -5,6 +5,22 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Engineer</title>
+    <!-- Preload critical hero background -->
+    <link rel="preload" as="image" href="/assets/sky.jpg" />
+    <link rel="preload" as="image" href="/assets/mountain-1.png" />
+    <link rel="preload" as="image" href="/assets/mountain-2.png" />
+    <link rel="preload" as="image" href="/assets/mountain-3.png" />
+    <link rel="preload" as="image" href="/assets/planets.png" />
+    <!-- Immediate background fallback -->
+    <style>
+      body {
+        background: linear-gradient(135deg, #030412 0%, #06091f 50%, #161a31 100%) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+        min-height: 100vh !important;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

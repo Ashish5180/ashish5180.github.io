@@ -1,5 +1,6 @@
 import { twMerge } from "tailwind-merge";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import PropTypes from 'prop-types';
 
 function MousePosition() {
   const [mousePosition, setMousePosition] = useState({
@@ -89,14 +90,17 @@ export const Particles = ({
       }
       window.removeEventListener("resize", handleResize);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [color]);
 
   useEffect(() => {
     onMouseMove();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mousePosition.x, mousePosition.y]);
 
   useEffect(() => {
     initCanvas();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [refresh]);
 
   const initCanvas = () => {
@@ -267,4 +271,16 @@ export const Particles = ({
       <canvas ref={canvasRef} className="size-full" />
     </div>
   );
+};
+
+Particles.propTypes = {
+  className: PropTypes.string,
+  quantity: PropTypes.number,
+  staticity: PropTypes.number,
+  ease: PropTypes.number,
+  size: PropTypes.number,
+  refresh: PropTypes.bool,
+  color: PropTypes.string,
+  vx: PropTypes.number,
+  vy: PropTypes.number,
 };

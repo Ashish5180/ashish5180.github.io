@@ -10,84 +10,89 @@ const HeroText = () => {
   };
 
   return (
-    <div className="z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
+    <div className="z-10 mt-20 md:mt-40 rounded-3xl bg-clip-text">
       {/* Desktop View */}
-      <div className="hidden flex-col md:flex space-y-4">
+      <div className="hidden md:flex flex-col space-y-6 text-left">
         <motion.h1
-          className="text-4xl font-medium text-white"
+          className="text-4xl font-semibold text-white"
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi, I'm Ashish
+          Hi, I&apos;m Ashish
         </motion.h1>
-        <div className="flex flex-col items-start space-y-4">
-          <motion.p
-            className="text-5xl font-medium text-neutral-300"
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.2 }}
-          >
-            A Software Developer <br /> Specialized in MERN stack , Go lang , App development and Cloud.
-          </motion.p>
-          <motion.div
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.5 }}
-          >
-            <FlipWords words={words} className="text-8xl font-black text-white" />
-          </motion.div>
-          <motion.p
-            className="text-4xl font-medium text-neutral-300"
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.8 }}
-          >
-            Building RESTful APIs, Spring Boot apps, and cloud-native microservices.
-          </motion.p>
-        </div>
-      </div>
 
-      {/* Mobile View */}
-      <div className="flex flex-col space-y-6 md:hidden">
-        <motion.h1
-          className="text-4xl font-medium text-white"
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 1 }}
-        >
-          Hi, I'm Ashish
-        </motion.h1>
         <motion.p
-          className="text-5xl font-black text-neutral-300"
+          className="text-5xl font-medium text-neutral-300 leading-snug"
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1.2 }}
         >
-          Java Developer
+          A Software Developer specialized in <br />
+          <span className="text-white">MERN Stack, Golang, App Development, and Cloud.</span>
         </motion.p>
+
         <motion.div
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1.5 }}
         >
-          <FlipWords words={words} className="text-7xl font-bold text-white" />
+          <FlipWords words={words} className="text-8xl font-extrabold text-white" />
         </motion.div>
+
         <motion.p
-          className="text-4xl font-black text-neutral-300"
+          className="text-3xl font-medium text-neutral-100 leading-relaxed"
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1.8 }}
         >
-          Microservices & APIs with Go lang , AWS Lambda
+          Building RESTful APIs, Cloud-native Microservices, and Serverless Applications.
+        </motion.p>
+      </div>
+
+      {/* Mobile View */}
+      <div className="flex flex-col space-y-6 md:hidden text-center">
+        <motion.h1
+          className="text-3xl font-semibold text-white"
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 1 }}
+        >
+          Hi, I&apos;m Ashish
+        </motion.h1>
+
+        <motion.p
+          className="text-4xl font-bold text-neutral-300 leading-snug"
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 1.2 }}
+        >
+          Software Developer
+        </motion.p>
+
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 1.5 }}
+        >
+          <FlipWords words={words} className="text-6xl font-extrabold text-white" />
+        </motion.div>
+
+        <motion.p
+          className="text-2xl font-medium text-neutral-300 leading-relaxed"
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 1.8 }}
+        >
+          Microservices & APIs with Golang, AWS Lambda, and Cloud.
         </motion.p>
       </div>
     </div>
