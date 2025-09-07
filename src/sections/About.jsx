@@ -17,7 +17,7 @@ const About = () => {
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
           />
           <div className="z-10">
-  <p className="headtext">Hi, I'm Ashish | Software Engineer</p>
+  <p className="headtext">Hi, I&apos;m Ashish | Software Engineer</p>
   <p className="subtext text-white">
   I specialize in MERN stack and Golang for building high-performance applications, with expertise in cloud-native serverless backends (AWS) and mobile apps using Flutter & Expo.
   Beyond coding, I focus on scalable architectures, API performance, and DevOps workflows, ensuring every product is fast, reliable, and cloud-ready. I adapt seamlessly across stacks and love solving challenges with the best-fit technology.
@@ -95,7 +95,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              I'm based in India, and open to remote work worldwide
+              I&apos;m based in India, and open to remote work worldwide
             </p>
           </div>
           <figure className="absolute left-[30%] top-[10%]">

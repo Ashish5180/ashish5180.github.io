@@ -1,10 +1,11 @@
 
 
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { useMotionValue, useSpring } from "motion/react";
 import { useFrame } from "@react-three/fiber";
 
+/* eslint-disable react/prop-types, react/no-unknown-property */
 export function Astronaut(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ProjectDetails from "./ProjectDetails";
+import PropTypes from 'prop-types';
 
 const Project = ({
   title,
@@ -48,6 +49,16 @@ const Project = ({
       )}
     </>
   );
+};
+
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  subDescription: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  tags: PropTypes.array.isRequired,
+  setPreview: PropTypes.func.isRequired,
 };
 
 export default Project;

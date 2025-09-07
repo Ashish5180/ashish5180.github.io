@@ -20,7 +20,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi, I'm Ashish
+          Hi, I&apos;m Ashish
         </motion.h1>
 
         <motion.p
@@ -63,7 +63,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi, I'm Ashish
+          Hi, I&apos;m Ashish
         </motion.h1>
 
         <motion.p

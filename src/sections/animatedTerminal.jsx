@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 // Tabs for the terminal
@@ -93,7 +93,7 @@ export const TerminalDemo = () => {
   const [net, setNet] = useState(4);
   const [cpuHistory, setCpuHistory] = useState([8, 10, 12, 11, 15, 18, 16, 20, 17, 22, 18, 16, 19, 21, 17, 16, 15, 18, 22, 19, 17, 20, 18, 16]);
   const [netHistory, setNetHistory] = useState([5,7,4,9,6,8,10,12,6,9,7,5,8,11,9,6]);
-  const [memHistory, setMemHistory] = useState([30,32,34,36,38,40,42,44,46,45,44,46,47,49,50,52,51,53,55,54]);
+  // const [memHistory] = useState([30,32,34,36,38,40,42,44,46,45,44,46,47,49,50,52,51,53,55,54]);
   const [disk, setDisk] = useState(68);
   const [swap, setSwap] = useState(24);
   const [tempC, setTempC] = useState(54);
@@ -114,19 +114,19 @@ export const TerminalDemo = () => {
   const projectBadges = useMemo(() => [
     "Serverless", "Edge‑ready", "Code‑split", "Typed API", "Observability", "Caching",
   ], []);
-  const skillsCore = useMemo(() => [
-    "TypeScript", "Next.js 15", "Go", "Node.js", "R3F", "Framer Motion", "React.js", "React Native", "Expo", "Flutter", "React Native Web",
-  ], []);
-  const skillsTooling = useMemo(() => [
-    "Prisma", "Firebase", "Supabase", "Postgres", "MongoDB", "React Query", "Jest", "ESLint", "Prettier",
-  ], []);
-  const skillsCloud = useMemo(() => [
-    "AWS Lambda", "API Gateway", "DynamoDB", "S3", "CloudFront", "CI/CD",
-  ], []);
+  // const skillsCore = useMemo(() => [
+  //   "TypeScript", "Next.js 15", "Go", "Node.js", "R3F", "Framer Motion", "React.js", "React Native", "Expo", "Flutter", "React Native Web",
+  // ], []);
+  // const skillsTooling = useMemo(() => [
+  //   "Prisma", "Firebase", "Supabase", "Postgres", "MongoDB", "React Query", "Jest", "ESLint", "Prettier",
+  // ], []);
+  // const skillsCloud = useMemo(() => [
+  //   "AWS Lambda", "API Gateway", "DynamoDB", "S3", "CloudFront", "CI/CD",
+  // ], []);
   const skillCategories = useMemo(() => [
     "Frontend", "Backend", "Cloud", "Mobile", "Testing", "3D/Graphics",
   ], []);
-  const [skillsRadar, setSkillsRadar] = useState([85, 78, 72, 68, 74, 60]);
+  const [skillsRadar] = useState([85, 78, 72, 68, 74, 60]);
   const proficiencyList = useMemo(() => ([
     { name: "Next.js", value: 92 },
     { name: "Go", value: 84 },
@@ -259,11 +259,11 @@ export const TerminalDemo = () => {
       if (isCompact) return; // Skip heavy updates in compact mode
 
       // Heavier updates (only in Details)
-      setMemHistory((h) => {
-        const last = h[h.length - 1] ?? 40;
-        const next = Math.max(10, Math.min(95, last + (Math.random() * 6 - 3)));
-        return [...h.slice(-29), next];
-      });
+      // setMemHistory((h) => {
+      //   const last = h[h.length - 1] ?? 40;
+      //   const next = Math.max(10, Math.min(95, last + (Math.random() * 6 - 3)));
+      //   return [...h.slice(-29), next];
+      // });
       setDisk((d) => Math.max(35, Math.min(95, d + (Math.random() * 3 - 1.5))));
       setSwap((s) => Math.max(5, Math.min(70, s + (Math.random() * 4 - 2))));
       setTempC((t) => Math.max(35, Math.min(88, t + (Math.random() * 2.5 - 1.2))));

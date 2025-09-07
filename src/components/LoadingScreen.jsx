@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
 
 const LoadingScreen = ({ onComplete }) => {
   const [progress, setProgress] = useState(0);
@@ -166,6 +167,10 @@ const LoadingScreen = ({ onComplete }) => {
       </div>
     </motion.div>
   );
+};
+
+LoadingScreen.propTypes = {
+  onComplete: PropTypes.func.isRequired,
 };
 
 export default LoadingScreen;
