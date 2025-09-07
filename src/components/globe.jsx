@@ -3,15 +3,14 @@
 import createGlobe from "cobe";
 import { useMotionValue, useSpring } from "motion/react";
 import { useEffect, useRef } from "react";
-
 import { twMerge } from "tailwind-merge";
+import PropTypes from "prop-types";
 
 const MOVEMENT_DAMPING = 1400;
 
 const GLOBE_CONFIG = {
   width: 800,
   height: 800,
-  onRender: () => {},
   devicePixelRatio: 2,
   phi: 0,
   theta: 0.3,
@@ -36,14 +35,11 @@ const GLOBE_CONFIG = {
   ],
 };
 
-import PropTypes from 'prop-types';
-
 export function Globe({ className, config = GLOBE_CONFIG }) {
   const phiRef = useRef(0);
   const widthRef = useRef(0);
   const canvasRef = useRef(null);
   const pointerInteracting = useRef(null);
-  const pointerInteractionMovement = useRef(0);
 
   const r = useMotionValue(0);
   const rs = useSpring(r, {
@@ -62,7 +58,7 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
   const updateMovement = (clientX) => {
     if (pointerInteracting.current !== null) {
       const delta = clientX - pointerInteracting.current;
-      pointerInteractionMovement.current = delta;
+      pointerInteracting.current = clientX; // update for smooth dragging
       r.set(r.get() + delta / MOVEMENT_DAMPING);
     }
   };
@@ -82,14 +78,21 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
       width: widthRef.current * 2,
       height: widthRef.current * 2,
       onRender: (state) => {
+        // rotation
         if (!pointerInteracting.current) phiRef.current += 0.005;
-        state.phiRef.current = phiRef.current + rs.get();
-        state.widthRef.current = widthRef.current * 2;
+        state.phi = phiRef.current + rs.get();
+        state.theta = 0.3;
+
+        // resize fix
+        state.width = widthRef.current * 2;
         state.height = widthRef.current * 2;
       },
     });
 
-    setTimeout(() => (canvasRef.current.style.opacity = "1"), 0);
+    setTimeout(() => {
+      if (canvasRef.current) canvasRef.current.style.opacity = "1";
+    }, 0);
+
     return () => {
       globe.destroy();
       window.removeEventListener("resize", onResize);
@@ -109,7 +112,6 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
         )}
         ref={canvasRef}
         onPointerDown={(e) => {
-          pointerInteracting.current = e.clientX;
           updatePointerInteraction(e.clientX);
         }}
         onPointerUp={() => updatePointerInteraction(null)}
