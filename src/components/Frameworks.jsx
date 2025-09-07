@@ -2,16 +2,14 @@ import { OrbitingCircles } from "./OrbitingCircles";
 
 export function Frameworks() {
   const skills = [
-    "microsoftsqlserver",
-    "java",
-    "springboot",
+    "stripe",
+    "go",
+    "flutter",
     "docker",
-    "kubernetes",
+    "expo",
     "nodejs",
     "auth0",
-    "css3",
     "git",
-    "html5",
     "javascript",
     "react",
     "tailwindcss",
@@ -26,7 +24,7 @@ export function Frameworks() {
           <Icon key={index} src={`assets/logos/${skill}.svg`} />
         ))}
       </OrbitingCircles>
-      <OrbitingCircles iconSize={25} radius={100} reverse speed={2}>
+      <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
         {skills.reverse().map((skill, index) => (
           <Icon key={index} src={`assets/logos/${skill}.svg`} />
         ))}

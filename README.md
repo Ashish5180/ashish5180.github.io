@@ -25,6 +25,7 @@ A modern, animated 3D developer portfolio built with React, Three.js, TailwindCS
 - 💌 Working contact form using **EmailJS**
 - 🧱 Beautiful UI enhancements with **Aceternity UI** and **Magic UI**
 - 🚀 Lightning-fast development with **Vite**
+- 🖥️ Neo Terminal (full‑bleed) with tabs (Projects/System/Skills), animated gradient, advanced charts (area/donut/bar), and smooth typewriter effects
 
 ---
 
@@ -67,8 +68,8 @@ A modern, animated 3D developer portfolio built with React, Three.js, TailwindCS
 ## 🚀 Getting Started
 1. Clone the Repository
 ```bash
-git clone https://github.com//Portfolio.git](https://github.com/Ashish5180/ashish5180.github.io/
-cd Portfolio
+git clone https://github.com/Ashish5180/ashish5180.github.io.git
+cd ashish5180.github.io
 ```
 2. Install Dependencies
 ```bash

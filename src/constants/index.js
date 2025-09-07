@@ -154,39 +154,50 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Software Engineer Intern",
-    job: "TNPSFL",
-    date: "Jun 2025 - Present",
+    title: "Software Developer Intern",
+    job: "ASOasis Tech",
+    website: "https://asoasis.tech/",
+    date: "Jul 2025 - Present",
     contents: [
-      "Developed a centralized warehouse management system to handle cargo and transport logistics efficiently.",
-      "Streamlined the tracking of incoming and outgoing shipments to enhance inventory visibility.",
-      "Collaborated with on-site teams to digitize manual processes and improve operational workflow.",
-    ],
+  "Engineered a job platform (Career Verse) leveraging Next.js for frontend, Go for backend, and AWS Lambda, S3, DynamoDB, ensuring a highly scalable and serverless architecture.",
+  "Contributed to Astro AI – an AI-based astrology application built with Next.js, Go, and Firebase, implementing palm reading, forehead analysis, and kundli compatibility features.",
+  "Developed an interactive quiz application utilizing Next.js, Go, Firebase, and AWS services, delivering real-time functionality and seamless user experience.",
+  "Crafted Next.js marketing and landing pages for clients including Bold Beauty and a New York Fashion Week-inspired design, emphasizing responsive and modern UI/UX.",
+  "Implemented a dynamic blog section using Prismic CMS, enabling efficient content management and publishing workflow.",
+  "Created custom graphics and visual content using Canva, enhancing user interface appeal and overall design quality."
+],
+
   },
   {
-    title: "Executive Intern",
-    job: "All Soft Solutions",
-    date: "Apr 2025 - May 2025",
+    title: "Product Engineer (Freelance)",
+    job: "Swipe It",
+    website: "https://www.swipeit.in/",
+    date: "May 2025 - Sep 2025",
     contents: [
-      "Assisted in software development tasks and internal tool automation for enterprise clients.",
-      "Gained exposure to corporate software practices, including SDLC and testing methodologies.",
-      "Worked closely with senior developers to understand and improve legacy systems.",
-    ],
+  "Led a team of 4 developers to design and implement a scalable job platform with a Tinder-style swipe UI, including vector embeddings for aptitude tests and resume analysis.",
+  "Architected the system design to handle up to 10,000 concurrent users, ensuring high performance and reliability.",
+  "Integrated Hugging Face models for intelligent resume parsing and candidate-job matching.",
+  "Mentored team members, coordinated development tasks, and improved internal workflows for efficient project delivery."
+],
+
   },
   {
     title: "Co-Founder",
     job: "webAtlantis",
+    website: "https://www.webatlantis.in/",
     date: "Jan 2025 - present",
     contents: [
-      "Co-founded a hybrid start-up focused on modern web solutions for SMEs.",
-      "Led back-end development, user experience design, and tech architecture decisions.",
-      "Delivered scalable applications using Node.js, Express, and MongoDB.",
-    ],
+  "Co-launched a web solutions startup with a partner, delivering 10+ projects across diverse domains.",
+  "Developed multiple Next.js landing pages, chat applications, and e-commerce platforms, ensuring responsive and modern UI/UX.",
+  "Worked on React projects integrating state management with Zustand, collaborating with a team for the Profit Pricer company.",
+  "Oversaw back-end development, application architecture, and feature implementation to deliver scalable, high-performance solutions."
+],
   },
   {
     title: "Back-End Developer",
     job: "Elastomech (Freelance)",
-    date: "Nov 2024 - Mar 2025",
+    website: "https://www.elastomech.in/",
+    date: "Sep 2024 - Mar 2025",
     contents: [
       "Designed and implemented an Inventory Management System to track materials, suppliers, and stock levels.",
       "Automated order tracking and stock replenishment processes to reduce manual effort.",
